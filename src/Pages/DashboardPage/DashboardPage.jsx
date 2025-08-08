@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import SaveIcon from "../../assets/icons/SaveICon";
+import SaveIcon from "../../assets/icons/SaveIcon";
 import SaveActiveIcon from "../../assets/icons/SaveActiveIcon";
 import DeliverIcon from "../../assets/icons/DeliverIcon";
 import StarIcon from "../../assets/icons/StarIcon";
