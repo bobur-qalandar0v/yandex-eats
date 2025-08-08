@@ -1,0 +1,107 @@
+// #F5F4F2
+.footer {
+  margin-top: 50px;
+  background-color: #f5f4f2;
+}
+
+.install {
+  &__wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 100px 0 80px 10px;
+
+    > span {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+  }
+}
+
+.line {
+  border-top: 1px solid #8a8784;
+}
+
+.footer__center {
+  padding: 0 10px;
+  padding-bottom: 50px;
+}
+
+.title__wrap {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.content__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.foods_and_kitchens {
+  margin-top: 36px;
+  display: flex;
+  gap: 80px;
+}
+
+.About_the_company {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  > span {
+    font-size: 14px;
+    color: #9e9b98;
+    cursor: pointer;
+    text-align: right;
+  }
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  > span {
+    color: #9e9b98;
+    font-size: 14px;
+    cursor: pointer;
+  }
+}
+
+.footer__bottom {
+  padding: 36px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &-item {
+    color: #9e9b98;
+    font-size: 15px;
+  }
+
+  .wk{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+}

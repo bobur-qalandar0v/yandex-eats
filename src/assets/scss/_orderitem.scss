@@ -1,0 +1,259 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+  display: flex;
+  gap: 64px;
+  align-items: flex-start;
+
+  &__left {
+    position: sticky;
+    top: 0; /* header balandligiga qarab o'zgartiring */
+    height: calc(100% - 100px); /* ekran balandligi */
+    overflow-y: auto; /* scroll uchun */
+    align-self: flex-start;
+    width: 300px;
+    margin-bottom: 40px;
+    /* quyidagi qatorni qo'shing */
+    scrollbar-width: none; /* Firefox uchun */
+
+    &::-webkit-scrollbar {
+      display: none; /* Chrome/Safari uchun */
+    }
+  }
+
+  .left__btn {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    gap: 10px;
+    background-color: white;
+    padding: 10px 18px;
+    border-radius: 16px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  .left__title {
+    margin-top: 42px;
+    font-size: 28px;
+    padding-left: 10px;
+  }
+
+  .left__ul {
+    list-style: none;
+    width: 100%;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .left__li {
+    padding: 13px 18px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 19px;
+    white-space: nowrap;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: white;
+    }
+
+    &.active {
+      background-color: white;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+
+  .info__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 42px;
+  }
+
+  .chaqmoq {
+    width: 28px;
+    height: 28px;
+
+    > img {
+      width: 100%;
+    }
+  }
+
+  &__right {
+    padding-bottom: 40px;
+    flex: 1;
+  }
+
+  .right__content {
+    position: relative;
+    width: 100%;
+  }
+
+  .right__shadow {
+    background: linear-gradient(
+      231deg,
+      rgba(46, 33, 33, 0) 25.77%,
+      #19181891 90.7%
+    );
+
+    width: 100%;
+    z-index: 100;
+    position: absolute;
+    border-radius: 36px;
+    height: 99%;
+  }
+
+  .right__img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 36px;
+  }
+
+  .right__title {
+    position: absolute;
+    z-index: 100;
+    color: white;
+    font-size: 50px;
+    top: 170px;
+    left: 50px;
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .info__div {
+    position: absolute;
+    z-index: 100;
+    left: 50px;
+    top: 270px;
+    display: flex;
+    gap: 8px;
+  }
+
+  .all {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 16px;
+    height: 56px;
+    padding: 10px 14px;
+  }
+
+  .deliver__time {
+    display: flex;
+    gap: 12px;
+  }
+
+  .info__rate {
+    display: flex;
+    align-items: center;
+  }
+
+  .free__deliver {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 50px;
+  }
+
+  .free__deliver-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 72px;
+    border-radius: 20px;
+    background: rgb(228, 242, 220);
+
+    > span {
+      color: rgb(114, 170, 82);
+      font-weight: bold;
+    }
+  }
+
+  .back__img {
+    width: 90px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .title {
+    padding-top: 100px;
+    font-size: 30px;
+  }
+
+  .cards__item {
+    margin-top: 20px;
+    // margin-bottom: 20px;
+    background-color: white;
+    border-radius: 24px;
+    padding: 12px;
+    cursor: pointer;
+    font-feature-settings: "pnum" on, "lnum";
+  }
+
+  .cards__img {
+    width: 100%;
+    border-radius: 24px;
+  }
+
+  .price__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .price {
+    font-size: 26px;
+  }
+
+  .name {
+    font-size: 18px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 44px;
+    margin-top: 10px;
+  }
+
+  .weight {
+    margin-top: 10px;
+    height: 20px;
+    font-size: 18px;
+    color: #9e9b98;
+  }
+
+  .add__btn {
+    font-size: 18px;
+    width: 100%;
+    height: 48px;
+    border-radius: 16px;
+    margin-top: 12px;
+    background-color: #f5f4f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+}

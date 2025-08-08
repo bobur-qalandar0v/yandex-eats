@@ -1,0 +1,98 @@
+.login {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 0;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  background-image: url("https://yastatic.net/s3/passport-auth-customs/customs/_/5584a8e0.jpg");
+
+  .form__header {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+  }
+
+  .form__btn {
+    height: 55px;
+    width: 50%;
+    font-size: 18px;
+    border-radius: 20px;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+    background-color: transparent;
+    border: none;
+    color: black;
+
+    &.active {
+      background: #f1f2f5;
+    }
+
+    &:hover {
+      background-color: #f7f8fa !important;
+      color: black !important;
+      border-color: transparent !important;
+    }
+
+    &:focus {
+      border: none !important;
+    }
+  }
+
+  .form-item__email,
+  .form-item__tel {
+    margin-top: 24px;
+    height: 55px;
+  }
+
+  .form-item__wrap {
+    position: relative;
+  }
+
+  .flag-icon {
+    position: absolute;
+    z-index: 10;
+    left: 8px;
+    top: 14px;
+  }
+
+  .phoneNumber__input {
+    padding-left: 45px;
+  }
+
+  .email__input,
+  .phoneNumber__input {
+    width: 100%;
+    height: 55px;
+    border-radius: 20px;
+    font-size: 20px;
+
+    &:focus {
+      border-color: black !important;
+      box-shadow: none;
+    }
+  }
+
+  .submit__btn {
+    width: 100%;
+    height: 55px;
+    border-radius: 20px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+
+    &:hover {
+      background-color: black !important;
+      border-color: transparent !important;
+      color: white !important;
+      background: transparent;
+    }
+  }
+}

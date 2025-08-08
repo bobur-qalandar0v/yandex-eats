@@ -1,0 +1,41 @@
+.slider-wrapper {
+  position: relative;
+  padding: 20px 0;
+}
+
+.custom-nav,
+.custom-nav-discount,
+.custom-nav-shop {
+  position: absolute;
+  top: 43%;
+  transform: translateY(-50%);
+  background-color: white;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+
+  &.swiper-button-disabled {
+    display: none;
+  }
+}
+
+.custom-next,
+.custom-next-discount,
+.custom-next-shop {
+  right: -30px;
+}
+
+.custom-prev,
+.custom-prev-discount,
+.custom-prev-shop {
+  left: -30px;
+}
