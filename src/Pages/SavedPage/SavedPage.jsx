@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { SavedContext } from "../../contexts/SavedContext";
-import SaveIcon from "../../assets/icons/SaveICon";
+import SaveIcon from "../../assets/icons/SaveIcon";
 import DeliverIcon from "../../assets/icons/DeliverIcon";
 import StarIcon from "../../assets/icons/StarIcon";
 import SaveActiveIcon from "../../assets/icons/SaveActiveIcon";
